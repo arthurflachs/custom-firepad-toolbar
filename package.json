@@ -1,0 +1,22 @@
+{
+  "name": "custom-firepad-toolbar",
+  "version": "1.0.0",
+  "description": "Overrides Firepad default toolbar settings. Allow to pass a callback on image insert.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "browserify --standalone CustomToolbar src/index.js > firepad-custom-toolbar.js",
+    "build:example": "browserify examples/index.js > examples/app.js"
+  },
+  "author": "Arthur Flachs <arthur.flachs@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "firepad": "^1.4.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arthurflachs/custom-firepad-toolbar.git"
+  }
+}
